@@ -1,17 +1,22 @@
 {
-  "name": "by.redstream.referrer",
-  "version": "0.1.0",
-  "description": "Android Install Referrer",
-  "cordova": {
-    "id": "by.redstream.referrer",
-    "platforms": [
-      "android"
-    ]
-  },
-  "keywords": [
-    "ecosystem:cordova",
-    "cordova-android"
-  ],
-  "author": "Yauheni Kiryienkau <ya@redstream.by>",
-  "license": "ISC"
+	"name": "by.redstream.referrer",
+	"version": "0.1.1",
+	"description": "Android Install Referrer",
+	"cordova": {
+		"id": "by.redstream.referrer",
+		"platforms": [
+			"android"
+		]
+	},
+	"keywords": [
+		"ecosystem:cordova",
+		"cordova-android",
+		"install referrer",
+		"google play",
+		"android referrer"
+	],
+	"repository": "bitbucket:yauhenko/cordova-referrer",
+	"bugs": "https://bitbucket.org/yauhenko/cordova-referrer/issues",
+	"author": "Yauheni Kiryienkau <ya@redstream.by>",
+	"license": "ISC"
 }
