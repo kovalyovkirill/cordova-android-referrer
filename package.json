@@ -1,0 +1,17 @@
+{
+  "name": "by.redstream.referrer",
+  "version": "0.1.0",
+  "description": "Android Install Referrer",
+  "cordova": {
+    "id": "by.redstream.referrer",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "Yauheni Kiryienkau <ya@redstream.by>",
+  "license": "ISC"
+}
