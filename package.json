@@ -1,6 +1,6 @@
 {
 	"name": "by.redstream.referrer",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"description": "Android Install Referrer",
 	"cordova": {
 		"id": "by.redstream.referrer",

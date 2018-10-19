@@ -17,15 +17,27 @@ https://play.google.com/store/apps/details?id=your.package.id&referrer=referrer-
 ## API
 
 ```javascript
-cordova.plugins.referrer.getReferrer(success, error);
+// Callback style
+cordova.plugins.referrer.get(success, error);
+
+// Promise style
+let promise = cordova.plugins.referrer.get();
 ```
 
 ## Example
 ```javascript
-cordova.plugins.referrer.getReferrer(function(referrer) {
-    conole.log(referrer);
-}, function(e) {
-    conole.error(e);
+// Callback style
+cordova.plugins.referrer.get((referrer) => {
+    console.log(referrer);
+}, (error) => {
+    console.error(error);
+});
+
+// Promise style
+cordova.plugins.referrer.get().then((referrer) => {
+    console.log(referrer);
+}).catch((error) => {
+    console.error(error);
 });
 ```
 
