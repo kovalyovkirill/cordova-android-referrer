@@ -1,7 +1,8 @@
 Android Install Referrer
 ========================
 
-Originally created by [yauhenko](https://bitbucket.org/yauhenko): https://bitbucket.org/yauhenko/cordova-referrer
+Fork of https://bitbucket.org/yauhenko/cordova-referrer
+Originally created by [yauhenko](https://bitbucket.org/yauhenko)
 
 This plugin captures the referrer value passed when an android app is installed from a webpage. 
 
