@@ -7,7 +7,7 @@ This plugin captures the referrer value passed when an android app is installed 
 
 ## Install
 
-`cordova plugins add by.redstream.referrer`
+`cordova plugins add https://github.com/kovalyovkirill/cordova-android-referrer`
 
 ## Usage
 
