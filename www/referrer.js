@@ -1,10 +1,12 @@
 var exec = require('cordova/exec');
+var MAX_CHECK_COUNT = 5;
 
-function getReferrer(success, error) {
+function getReferrer(success, error, count) {
 
 	if(!success) {
 		return new Promise(function(resolve, reject) {
-			getReferrer(resolve, reject);
+			count = 0;
+			getReferrer(resolve, reject, count);
 		});
 	}
 
@@ -12,9 +14,15 @@ function getReferrer(success, error) {
     	if(ref) {
     		success(ref);
     	} else {
-    		setTimeout(function() {
-    			getReferrer(success, error)
-    		}, 500);
+			if (count <= MAX_CHECK_COUNT) {
+				if (!isFinite(count)) {
+					count = 0;
+				}
+				count++;
+				getReferrer(success, error, count);
+			} else {
+				error('max count reached');
+			}
     	}
     }, error, 'referrer');
 }
